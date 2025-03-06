@@ -7,7 +7,7 @@ Feature: Login Truckrr web
     When Enter "demotruckrr@gmail.com" and "Demo@123"
     When skip two step verification page
 
-  Scenario: Adding Customer
+ Scenario: Adding Customer
     When Need to add customer
     And click add customer to add
     When Entering customer details

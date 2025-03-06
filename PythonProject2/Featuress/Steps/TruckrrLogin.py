@@ -54,7 +54,7 @@ def skip_verification(context):
         print("Skipped two-step verification.")
     except:
         print("Skip button not found, continuing...")
-
+time.sleep(5)
 
 @when('Need to add customer')
 def add_customer(context):
