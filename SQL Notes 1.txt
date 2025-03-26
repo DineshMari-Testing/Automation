@@ -1,0 +1,36 @@
+----- Select Query-------
+
+syntax : Select column_name from table_name , * will select all columns
+
+SELECT * FROM patients
+
+
+update patients set first_name ='Dinesh',city='chennai' where patient_id =1;
+
+---select command with where condition-----
+
+select first_name,last_name,gender from patients where gender='M';
+
+---Select command where condition with is null----
+
+select first_name,last_name from patients where allergies is null;
+
+---- Select command with like statement , like need to take data with first letter of name and data------
+
+select first_name from patients where first_name like 'c%';
+
+-----Select command with where between range condition------
+
+select first_name,last_name from patients where weight between 100 and 120;
+
+-----update query with where condition-----
+
+update patients set allergies ='NKA' where allergies is null
+
+---- Select command with concatenation of two column in new column-------
+
+select concat(first_name, ' ' ,last_name) as full_name from patients;
+
+----- Select command as taking total count of where condition------
+
+SELECT COUNT(*) AS patient_count FROM patients WHERE YEAR(birth_date) = 2010;
